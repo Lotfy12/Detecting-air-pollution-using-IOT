@@ -1,0 +1,31 @@
+.button {
+  background-color: #f8f8f8;
+  border-radius: 6.5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 16px 0;
+  list-style: none;
+  transition: all 0.35s;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0 0 0 2px #000000b3, 8px 8px 0 0 #000000b3;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ececea;
+  border-bottom: 2px solid #c6c6c6;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #666;
+}

@@ -1,0 +1,88 @@
+.section_descriptions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: 82px;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: moveUpDown 2s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section-overlay);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: #f8f8f8;
+  transition: all 0.35s;
+}
+
+.card:nth-child(odd):hover {
+  background-color: #f8f8f8;
+  color: #000000b3;
+  box-shadow: rgba(41, 41, 41, 0.15) 3px 15px 25px;
+}
+
+.card:nth-child(even):hover {
+  background-color: rgb(41, 41, 41);
+  color: #f0f0f0;
+  box-shadow: rgba(240, 229, 229, 0.534) 0px 5px 15px;
+}
+
+.card:nth-child(7) {
+  width: 280%;
+  transition: all 0.5s;
+  font-size: 48px;
+}
+
+.description_card_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.description_card_icon small {
+  text-transform: capitalize;
+}
+
+.description_card_icon svg {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card:hover {
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .section_descriptions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-27px);
+  }
+}
