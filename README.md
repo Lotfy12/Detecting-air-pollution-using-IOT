@@ -12,7 +12,6 @@ This project was my graduation project. My team uesd Ardunio to measure special 
 - **CSS Modules** for styling
 - **React Router** for navigate between pages
 - **recharts** for make analysis of data 
--
 
 ---
 
